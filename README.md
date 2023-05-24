@@ -6,4 +6,4 @@
         python manage.py migrate
         python manage.py runserver
 
-4. go to http://127.0.0.1:8000/api/schema/swagger-ui/ or http://127.0.0.1:8001/api/schema/redoc/ to test APIs.
+4. go to http://127.0.0.1:8000/api/schema/swagger-ui/ or http://127.0.0.1:8000/api/schema/redoc/ to test APIs.
