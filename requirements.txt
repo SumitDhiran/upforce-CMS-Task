@@ -9,7 +9,8 @@ jsonschema==4.17.3
 PyJWT==2.7.0
 pyrsistent==0.19.3
 pytz==2023.3
-PyYAML==6.0
+PyYAML==6.0.1
 sqlparse==0.4.4
 typing_extensions==4.6.1
 uritemplate==4.1.1
+gunicorn==21.2.0

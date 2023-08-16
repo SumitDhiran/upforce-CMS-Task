@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  upforce_task:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/upforce_task
+    ports:
+      - 8001:8000
+    image: upforce-task-image
+    container_name: upforce-task-container
+    command: >
+      sh -c   "python manage.py collectstatic &&
+              python manage.py migrate &&
+              gunicorn -c gunicorn.py"
